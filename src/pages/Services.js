@@ -122,7 +122,7 @@ const Services = () => {
           <h1>IT Consulting</h1>
           <p>
             We are also devoted to support you in a process of continuous
-            improvement for a better performance and efficiency every day
+            improvement for a better performance and efficiency every day.
           </p>
         </ServicesText>
       </ServicesContainer>
