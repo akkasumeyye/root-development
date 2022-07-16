@@ -3,7 +3,6 @@ import styled from "styled-components";
 import software from "../assests/software.svg";
 
 const ServicesPage = styled.div`
-  width: 100%;
   height: 100vh;
   color: #fff;
   margin-top: 15rem;
@@ -107,7 +106,7 @@ const Services = () => {
         <h1>Innovative Software and Designs</h1>
         <p>
           With an experienced team in the sector; We offer web design, software
-          and digital media solutions.
+          and digital media solutions .
         </p>
       </CompanyIntroduce>
       <ServicesIntroduce>
@@ -117,7 +116,7 @@ const Services = () => {
       <div>
 
       <ServicesContainer>
-        <img src={software} alth="software" width={110}></img>
+        <img src={software} alt="software" width={110}></img>
         <ServicesText>
           <h1>IT Consulting</h1>
           <p>
