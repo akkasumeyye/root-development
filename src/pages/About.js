@@ -4,6 +4,7 @@ import about from "../assests/Root-DNA.png"
 
 const AboutPage = styled.div`
   height: 100vh;
+  width: 100vw;
   color: #fff;
   display: flex;
   margin-top: 10rem;
