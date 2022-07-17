@@ -6,7 +6,7 @@ import mobile from "../assests/mobile.svg";
 import embedded from "../assests/embedded.svg";
 
 const ServicesPage = styled.div`
-  height: 65vh;
+  height: 60vh;
   width: 85vw;
   color: #fff;
   margin-top: 15rem;

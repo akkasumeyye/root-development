@@ -12,12 +12,12 @@ const AboutPage = styled.div`
 const AboutContent = styled.div`
 margin-top: 15rem;
 h1 {
-  margin-left:22rem;
+  margin-left:25rem;
 }
 p{
   margin-top: 2rem;
   line-height: 1.8;
-  margin-left: 4rem;
+  margin-left: 8rem;
   font-size: 1.2rem;
 }
 `;
