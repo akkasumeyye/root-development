@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const ContactPage = styled.div`
 margin-top: 15vh;
-height:100vh;
+height:85vh;
   color: #fff;
 `
 

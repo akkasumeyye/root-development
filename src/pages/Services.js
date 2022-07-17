@@ -9,8 +9,8 @@ const ServicesPage = styled.div`
   height: 65vh;
   width: 85vw;
   color: #fff;
-  margin-top: 8rem;
-  margin-left: 12rem;
+  margin-top: 15rem;
+  margin-left: 8rem;
   display: grid;
   grid-template-areas: 'company consulting outsourcing'
   'company mobile embedded';

@@ -7,7 +7,7 @@ const AboutPage = styled.div`
   width: 100vw;
   color: #fff;
   display: flex;
-  margin-top: 10rem;
+  margin-top: 5rem;
 `;
 const AboutContent = styled.div`
 margin-top: 15rem;
