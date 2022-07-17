@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../../assests/root-logo.png";
+import logo from "../assests/root-logo.png";
 import { FiPhoneCall } from "react-icons/fi";
 
 const Nav = styled.nav`
@@ -13,7 +13,6 @@ const Nav = styled.nav`
   width: 100%;
   z-index: 10;
   height: 5rem;
-  background-color: #0e0e0e;
   box-shadow: ${({ scroll }) =>
     scroll ? `0 0.3rem 1.5rem rgba(109, 109, 109, 0.15)` : `none`};
   animation-duration: 0.5s;

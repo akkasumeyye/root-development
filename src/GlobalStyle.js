@@ -17,7 +17,8 @@ const GlobalStyle = createGlobalStyle`
 body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  background-color:#0e0e0e;
+  overflow-x: hidden;
+  background-color: #231955;
 }
 a {
     text-decoration: none;

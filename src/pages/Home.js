@@ -1,8 +1,8 @@
 import React from 'react'
-import Main from '../assests/components/Main';
 import About from './About';
 import Services from './Services';
 import Contact from './Contact';
+import Main from '../components/Main';
 
 const Home = () => {
   return (
