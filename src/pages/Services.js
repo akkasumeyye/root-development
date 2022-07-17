@@ -5,6 +5,8 @@ import outsourcing from "../assests/outsourcing.svg";
 import mobile from "../assests/mobile.svg";
 import embedded from "../assests/embedded.svg";
 
+import { Link } from "react-router-dom";
+
 const ServicesPage = styled.div`
   height: 60vh;
   width: 85vw;
@@ -136,9 +138,12 @@ const Services = () => {
             software and digital media solutions .
           </p>
         </CompanyIntroduce>
+        <Link to={"/about"}>
         <ServicesIntroduce>
           <h4>Know about us!</h4>
         </ServicesIntroduce>
+         
+        </Link>
       </div>
       <div>
         <ServicesContainer>

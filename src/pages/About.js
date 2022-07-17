@@ -36,6 +36,12 @@ const OurValues = styled.div`
     color: #0e0e0e;
     gap: 3rem;
 
+    :nth-child(2) {
+      h4{
+        margin-left: 1.4rem;
+      }
+    }
+
     div {
       width: 120px;
       height: 120px;

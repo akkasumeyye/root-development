@@ -17,7 +17,7 @@ const FooterContainer = styled.div`
 `;
 
 const CompanyIntroduce = styled.div`
-  color:bisque;
+  color:#fff;
   display: flex;
   justify-content: center;
   gap:10rem;

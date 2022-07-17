@@ -7,7 +7,7 @@ const MainComponent = styled.div`
   margin: 16rem 20rem;
   color: #fff;
   position: absolute;
-z-index:5;
+  z-index: 5;
 `;
 
 const MainContent = styled.h1`
@@ -49,11 +49,11 @@ const Introduce = styled.div`
   &:hover {
     width: 15vw;
     background-color: #ff4157;
-    z-index: 1;
+    z-index: 4;
   }
   h5 {
     margin-left: 2rem;
-    z-index: 2;
+    z-index: 5;
   }
 
   &::before {
@@ -61,7 +61,7 @@ const Introduce = styled.div`
     height: 100%;
     background-color: #ff4157;
     content: "";
-    z-index: 0;
+    z-index: 3;
     transition: all 0.5s;
   }
 
@@ -72,7 +72,7 @@ const Introduce = styled.div`
     width: 40px;
     height: 2px;
     background-color: #fff;
-    z-index: 2;
+    z-index: 5;
   }
 `;
 
@@ -97,21 +97,24 @@ const MainBackground = styled.div`
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url(${earth}) no-repeat center ;
+  background: url(${earth}) no-repeat center;
   z-index: -1;
   animation: rotate 35s linear infinite;
   @keyframes rotate {
-    100% {background-position:100%}
+    100% {
+      background-position: 100%;
+    }
   }
 
-
   &:after {
-    position:absolute;
+    position: absolute;
     content: "";
-  position: absolute;
-  left: 0; right: 0;
-  top: 0; bottom: 0;
-  background: rgba(0,0,0,.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
   }
 `;
 
