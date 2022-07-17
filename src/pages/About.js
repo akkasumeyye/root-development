@@ -25,9 +25,9 @@ const AboutContent = styled.div`
 `;
 
 const OurValues = styled.div`
-  margin-top: 8rem;
   h3 {
     margin-left: 28rem;
+    margin-top:5rem;
   }
   div {
     display: flex;
@@ -64,12 +64,6 @@ const About = () => {
             expectations.
           </p>
           <OurValues>
-            <h3>Our Values</h3>
-            <p>
-              Our team is our most important asset. We encourage a participatory
-              culture where the different actors are expected to make
-              contributions and improvements.
-            </p>
             <div>
               <div>
                 <h4>Integrity</h4>
@@ -84,6 +78,12 @@ const About = () => {
                 <h4>Simplicity</h4>
               </div>
             </div>
+            <h3>Our Values</h3>
+            <p>
+              Our team is our most important asset. We encourage a participatory
+              culture where the different actors are expected to make
+              contributions and improvements.
+            </p>
           </OurValues>
         </AboutContent>
         <img src={about} alt="logo"></img>
