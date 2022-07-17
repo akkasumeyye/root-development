@@ -6,7 +6,7 @@ import mobile from "../assests/mobile.svg";
 import embedded from "../assests/embedded.svg";
 
 const ServicesPage = styled.div`
-  height: 85vh;
+  height: 65vh;
   width: 85vw;
   color: #fff;
   margin-top: 8rem;
@@ -14,7 +14,8 @@ const ServicesPage = styled.div`
   display: grid;
   grid-template-areas: 'company consulting outsourcing'
   'company mobile embedded';
-
+  row-gap: 0;
+  
   div {
     :nth-child(1){
     grid-area: company;
