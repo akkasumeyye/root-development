@@ -1,13 +1,35 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import earth from "../assests/earth.png";
 
+import {Link} from "react-router-dom"
+
+
 const MainComponent = styled.div`
-  margin: 16rem 20rem;
+ overflow: hidden;
+ position:relative;
   color: #fff;
-  position: absolute;
-  z-index: 5;
+  z-index: -1;
+  height:100vh;
+  width: 100%;
+  background: url(${earth}) no-repeat left bottom;
+  animation: rotate 35s linear infinite;
+  @keyframes rotate {
+    100% {
+      background-position: 100%;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index:0;
+  }
 `;
 
 const MainContent = styled.h1`
@@ -17,7 +39,7 @@ const MainContent = styled.h1`
   line-height: 1.25;
 `;
 
-const MainDescription = styled.p`
+const MainDescription = styled.div`
   animation-name: fadeInFromCenter;
   animation-duration: 0.9s;
   animation-fill-mode: both;
@@ -36,33 +58,32 @@ const MainDescription = styled.p`
   font-size: 1.875rem;
   font-weight: 100 !important;
   margin-top: 5rem;
+
+
 `;
 
-const Introduce = styled.div`
-  cursor: pointer;
+ const Introduce = styled(Link)`
   display: inline-flex;
   margin-top: 3rem;
   align-items: center;
   color: #fff;
-  height: 60px;
-
-  &:hover {
+  cursor:pointer;
+  z-index:11;
+  
+  :hover {
     width: 15vw;
-    background-color: #ff4157;
-    z-index: 4;
+    color: #ff4157;
+    z-index:20;
   }
-  h5 {
-    margin-left: 2rem;
-    z-index: 5;
-  }
-
+     
+  
   &::before {
     width: 60px;
-    height: 100%;
+    height: 60px;
     background-color: #ff4157;
     content: "";
-    z-index: 3;
     transition: all 0.5s;
+    z-index: 1;
   }
 
   &::after {
@@ -72,11 +93,17 @@ const Introduce = styled.div`
     width: 40px;
     height: 2px;
     background-color: #fff;
-    z-index: 5;
+    z-index:3;
+  }
+  h4{
+    margin-left: 2rem;
   }
 `;
 
 const MainAnimation = styled.div`
+  margin: 16rem 20rem;
+  z-index:10;
+  position:absolute;
   animation-name: fadeInFromCenter;
   animation-duration: 0.9s;
   animation-fill-mode: both;
@@ -93,48 +120,18 @@ const MainAnimation = styled.div`
   }
 `;
 
-const MainBackground = styled.div`
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url(${earth}) no-repeat center;
-  z-index: -1;
-  animation: rotate 35s linear infinite;
-  @keyframes rotate {
-    100% {
-      background-position: 100%;
-    }
-  }
-
-  &:after {
-    position: absolute;
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-  }
-`;
 
 const Main = () => {
   return (
-    <MainBackground>
       <MainComponent>
         <MainAnimation>
           <MainContent>we code the world of the future </MainContent>
           <MainDescription>
             We offer digital solutions with 100% customer satisfaction!
           </MainDescription>
+          <Introduce to={"/services"}><h4>What we are doing?</h4></Introduce>
         </MainAnimation>
-        <Link to={"/services"}>
-          <Introduce>
-            <h5> What we are doing ?</h5>
-          </Introduce>
-        </Link>
       </MainComponent>
-    </MainBackground>
   );
 };
 
