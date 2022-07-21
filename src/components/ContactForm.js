@@ -35,8 +35,9 @@ const Form = styled.form`
   textarea {
     border: 2px solid hsla(0, 100%, 90%, 0.1);
     border-radius: 5px;
-    background-color: hsla(0, 100%, 90%, 0.1);
-
+    background-color: hsla(0, 100%, 100%, 0.1);
+    font-size: large;
+    color: #fff;
   }
 
   input {
@@ -65,17 +66,17 @@ const FormIcon = styled.div`
   height: 10vh;
   position: relative;
 
-  /* :before {
+  :before {
     content: "";
     width: 5.5vw;
     height: 10vh;
     border-radius: 50%;
-    background-color: hsla(0, 100%, 90%, 0.3);
+    background-color: hsla(0, 100%, 100%, 0.1);
     z-index: 12;
     position: absolute;
     margin-left: 15vw;
     margin-top: 2.2rem;
-  } */
+  }
   svg {
     margin-top: 3rem;
     margin-left: 15.9vw;
