@@ -79,7 +79,9 @@ window.addEventListener('scroll', startAnimationAbout);
             expectations.
           </p>
           <OurValues>
-            <div className={ startAnimation ? "start" : ""}>
+            {
+              startAnimation ? 
+            <div className="start">
               <div>
                 <h4>Integrity</h4>
               </div>
@@ -92,7 +94,9 @@ window.addEventListener('scroll', startAnimationAbout);
               <div>
                 <h4>Simplicity</h4>
               </div>
-            </div>
+            </div> : <span/>
+
+            }
             <h3>Our Values</h3>
             <p>
               Our team is our most important asset. We encourage a participatory
