@@ -9,7 +9,7 @@ import {Link} from "react-scroll"
 
 
 const ServicesPage = styled.div`
-  height: 100vh;
+  height: 60vh;
   width: 85vw;
   color: #fff;
   margin-top: 25rem;
@@ -17,7 +17,6 @@ const ServicesPage = styled.div`
   display: grid;
   grid-template-areas: 'company consulting outsourcing'
   'company mobile embedded';
-  row-gap: 0;
   
   div {
     :nth-child(1){

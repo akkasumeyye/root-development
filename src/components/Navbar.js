@@ -170,7 +170,7 @@ const Navbar = () => {
       </NavLink>
       <div>
         <NavLink activeClass="active" smooth={true} spy={true} to="about">About</NavLink>
-        <NavLink activeClass="active" smooth={true} spy={true} offset={-180} to="services">Services</NavLink>
+        <NavLink activeClass="active" smooth={true} spy={true} offset={-280} to="services">Services</NavLink>
         <NavLink activeClass="active" smooth={true} spy={true} offset={-100} to="contact">
           <FiPhoneCall color={"white"} fontSize="1.3rem" /> Contact
         </NavLink>
