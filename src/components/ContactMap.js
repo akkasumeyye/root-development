@@ -7,7 +7,8 @@ const Map = styled.div`
   height: 70vh;
   margin-left: 15rem;
   border-radius: 15px;
-  background-color: #fff;
+  background-color: hsla(0, 100%, 90%, 0.3);
+
 `
 
 const ContactMap = () => {
