@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { AiFillLinkedin } from "react-icons/ai";
-import tunisia from "../assests/tunisia.png";
+import turkey from "../assests/turkey.png";
 import france from "../assests/france.png";
 import canada from "../assests/canada.png";
 import logo from "../assests/root-logo.png";
@@ -79,8 +79,8 @@ const Footer = () => {
         <div>
           <h2>CONTACT</h2>
           <p>
-            <img src={tunisia} alt="tunisia" width={40} />
-            +216 21 158 188
+            <img src={turkey} alt="turkey" width={40} />
+            +90 555 55 55
           </p>
           <p>
             <img src={france} alt="france" width={40} />
