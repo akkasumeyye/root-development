@@ -37,6 +37,20 @@ a {
   .navbar.colorChange {
      background-color: #231955;
   }
+
+  .start {
+    animation: slide-in-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      @keyframes slide-in-tr {
+        0% {
+          transform: translateY(-500px) translateX(500px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0) translateX(0);
+          opacity: 1;
+        }
+      }
+  }
 `;
 
 export default GlobalStyle;

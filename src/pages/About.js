@@ -1,4 +1,4 @@
-import React from "react";
+import React , {useState} from "react";
 import styled from "styled-components";
 import about from "../assests/Root-DNA.png";
 
@@ -48,23 +48,23 @@ const OurValues = styled.div`
       background-color: #9dd6df;
       margin-top: 5rem;
       border-radius: 50%;
-      animation: slide-in-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-      @keyframes slide-in-tr {
-        0% {
-          transform: translateY(-500px) translateX(500px);
-          opacity: 0;
-        }
-        100% {
-          transform: translateY(0) translateX(0);
-          opacity: 1;
-        }
-      }
     }
   }
 `;
 
 const About = () => {
+  const [startAnimation, setstartAnimation] = useState(false);
+const startAnimationAbout = () =>{
+   if(window.scrollY >= 800){
+     setstartAnimation(true);
+   }
+   else{
+     setstartAnimation(false);
+   }
+};
+window.addEventListener('scroll', startAnimationAbout);
   return (
+
     <>
       <AboutPage id="about">
         <AboutContent>
@@ -79,7 +79,7 @@ const About = () => {
             expectations.
           </p>
           <OurValues>
-            <div>
+            <div className={ startAnimation ? "start" : ""}>
               <div>
                 <h4>Integrity</h4>
               </div>
