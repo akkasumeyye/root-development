@@ -29,6 +29,14 @@ a {
     border: none;
     cursor: pointer;
   }
+
+  .navbar {
+    background-color: transparent;
+  }
+
+  .navbar.colorChange {
+     background-color: #231955;
+  }
 `;
 
 export default GlobalStyle;

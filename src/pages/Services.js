@@ -5,14 +5,14 @@ import outsourcing from "../assests/outsourcing.svg";
 import mobile from "../assests/mobile.svg";
 import embedded from "../assests/embedded.svg";
 
-import {Link} from "react-router-dom"
+import {Link} from "react-scroll"
 
 
 const ServicesPage = styled.div`
-  height: 60vh;
+  height: 100vh;
   width: 85vw;
   color: #fff;
-  margin-top: 15rem;
+  margin-top: 25rem;
   margin-left: 8rem;
   display: grid;
   grid-template-areas: 'company consulting outsourcing'
@@ -129,7 +129,7 @@ const ServicesText = styled.div`
 
 const Services = () => {
   return (
-    <ServicesPage>
+    <ServicesPage id="services">
       <div>
         <CompanyIntroduce>
           <h5>What are we doing ?</h5>
@@ -139,7 +139,7 @@ const Services = () => {
             software and digital media solutions .
           </p>
         </CompanyIntroduce>
-        <ServicesIntroduce to={"/about"}><h4>Know about us!</h4></ServicesIntroduce>
+        <ServicesIntroduce activeClass="active" smooth={true} spy={true} to="about"><h4>Know about us!</h4></ServicesIntroduce>
       </div>
       <div>
         <ServicesContainer>

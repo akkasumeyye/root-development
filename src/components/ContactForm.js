@@ -12,28 +12,28 @@ const Form = styled.form`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 2.5rem;
+  opacity: 0.9;
   
   div {
-    position: relative;
     background: radial-gradient(
-      ellipse at 50% 15%,
-      #ffbf00 75%,
+      ellipse at 50% 25%,
+      #0000CD 70%,
       transparent 70%
       );
       
-      ::after {
+      /* ::after {
       position: absolute;
-      margin-top: 2rem;
+      margin-top: 2.1rem;
       width: 35vw;
       height: 10vh;
       z-index:-1;
       content: "-";
       background: radial-gradient(
-        ellipse at 50% 15%,
-        #ffefd5 75%,
+        ellipse at 55% 25%,
+        #ADD8E6 73%,
         transparent 70%
       );
-    }
+    } */
   }
 
   h1 {
@@ -72,7 +72,7 @@ const Form = styled.form`
     margin-left: 15vw;
     font-weight: bold;
     width: 5vw;
-    background-color: #ff4157;
+    background-color: #ff6781;
     color: #fff;
     padding: 0.7rem;
     border-radius: 1rem;
@@ -86,18 +86,18 @@ const FormIcon = styled.div`
 
   :before {
     content: "";
-    width: 4.5vw;
-    height: 8vh;
+    width: 5.5vw;
+    height: 10vh;
     border-radius: 50%;
     background-color: #fff;
     z-index: 12;
     position: absolute;
     margin-left: 15vw;
-    margin-top: 3rem;
+    margin-top: 2.2rem;
   }
   svg {
-    margin-top: 4rem;
-    margin-left: 16vw;
+    margin-top: 3.5rem;
+    margin-left: 15.9vw;
     z-index: 13;
     position: absolute;
   }
@@ -132,7 +132,7 @@ const ContactForm = () => {
     <Form>
       <div></div>
       <FormIcon>
-        <FaRegPaperPlane fontSize="2.5rem" />
+        <FaRegPaperPlane fontSize="4rem" />
       </FormIcon>
       <h1>CONTACT US</h1>
       <h5>Name</h5>

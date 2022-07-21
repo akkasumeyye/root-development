@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import earth from "../assests/earth.png";
 
-import {Link} from "react-router-dom"
+import {Link} from "react-scroll"
 
 
 const MainComponent = styled.div`
@@ -129,7 +129,7 @@ const Main = () => {
           <MainDescription>
             We offer digital solutions with 100% customer satisfaction!
           </MainDescription>
-          <Introduce to={"/services"}><h4>What we are doing?</h4></Introduce>
+          <Introduce activeClass="active" smooth={true} spy={true} to="services"><h4>What we are doing?</h4></Introduce>
         </MainAnimation>
       </MainComponent>
   );

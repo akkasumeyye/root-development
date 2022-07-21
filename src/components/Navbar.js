@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React , {useState} from "react";
+import { Link } from "react-scroll";
 import styled from "styled-components";
 import logo from "../assests/root-logo.png";
 import { FiPhoneCall } from "react-icons/fi";
@@ -13,8 +13,6 @@ const Nav = styled.nav`
   width: 100%;
   z-index: 10;
   height: 5rem;
-  box-shadow: ${({ scroll }) =>
-    scroll ? `0 0.3rem 1.5rem rgba(109, 109, 109, 0.15)` : `none`};
   animation-duration: 0.5s;
   animation-name: slideInFromTop;
   animation-timing-function: ease-out;
@@ -40,6 +38,7 @@ const NavLink = styled(Link)`
   color: #fff;
   font-size: inherit;
   margin-left: 2rem;
+  cursor: pointer;
 
   :nth-child(1) , :nth-child(2) {
 
@@ -152,15 +151,27 @@ const NavLink = styled(Link)`
 `;
 
 const Navbar = () => {
+
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () =>{
+     if(window.scrollY >= 80){
+       setColorchange(true);
+     }
+     else{
+       setColorchange(false);
+     }
+  };
+  window.addEventListener('scroll', changeNavbarColor);
+
   return (
-    <Nav>
-      <NavLink to={"/"}>
+    <Nav className={colorChange ? 'navbar colorChange' : 'navbar'}>
+      <NavLink activeClass="active" smooth={true} spy={true} to="home">
         <img src={logo} alt="logo" height={220}></img>
       </NavLink>
       <div>
-        <NavLink to={"/about"}>About</NavLink>
-        <NavLink to={"/services"}>Services</NavLink>
-        <NavLink to={"/contact"}>
+        <NavLink activeClass="active" smooth={true} spy={true} to="about">About</NavLink>
+        <NavLink activeClass="active" smooth={true} spy={true} offset={-180} to="services">Services</NavLink>
+        <NavLink activeClass="active" smooth={true} spy={true} offset={-100} to="contact">
           <FiPhoneCall color={"white"} fontSize="1.3rem" /> Contact
         </NavLink>
       </div>

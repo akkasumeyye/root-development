@@ -57,7 +57,7 @@ const OurValues = styled.div`
 const About = () => {
   return (
     <>
-      <AboutPage>
+      <AboutPage id="about">
         <AboutContent>
           <h1>ROOT'S DNA</h1>
           <p>

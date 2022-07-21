@@ -9,7 +9,7 @@ position:relative;
 display: flex;
 gap: 8rem;
 margin-top: 10vh;
-height:90vh;
+height:100vh;
   color: #fff;
   background: url(${contact});
   z-index:1;
@@ -27,7 +27,7 @@ height:90vh;
 
 const Contact = () => {
   return (
-    <ContactPage>
+    <ContactPage id='contact'>
       <ContactMap/>
       <ContactForm/>
     </ContactPage>
