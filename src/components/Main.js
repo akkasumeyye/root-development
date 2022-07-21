@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import earth from "../assests/earth.png";
+import sunrise from "../assests/sunrise.png";
 
 import {Link} from "react-scroll"
 
@@ -12,7 +13,7 @@ const MainComponent = styled.div`
   z-index: -1;
   height:100vh;
   width: 100%;
-  background: url(${earth}) no-repeat left bottom;
+  background : url(${sunrise}) no-repeat left bottom;
   animation: rotate 35s linear infinite;
   @keyframes rotate {
     100% {

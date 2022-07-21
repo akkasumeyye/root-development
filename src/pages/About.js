@@ -27,7 +27,7 @@ const AboutContent = styled.div`
 const OurValues = styled.div`
   h3 {
     margin-left: 28rem;
-    margin-top:5rem;
+    margin-top: 5rem;
   }
   div {
     display: flex;
@@ -37,7 +37,7 @@ const OurValues = styled.div`
     gap: 3rem;
 
     :nth-child(2) {
-      h4{
+      h4 {
         margin-left: 1.4rem;
       }
     }
@@ -48,8 +48,17 @@ const OurValues = styled.div`
       background-color: #9dd6df;
       margin-top: 5rem;
       border-radius: 50%;
-      animation:slide-in-tr .5s cubic-bezier(.25,.46,.45,.94) both;
-@keyframes slide-in-tr{0%{transform:translateY(-1000px) translateX(1000px);opacity:0}100%{transform:translateY(0) translateX(0);opacity:1}}
+      animation: slide-in-tr 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      @keyframes slide-in-tr {
+        0% {
+          transform: translateY(-500px) translateX(500px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0) translateX(0);
+          opacity: 1;
+        }
+      }
     }
   }
 `;
