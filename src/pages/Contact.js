@@ -2,12 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import contact  from "../assests/contact.jpg"
 import ContactForm from '../components/ContactForm'
-import ContactMap from '../components/ContactMap'
 
 const ContactPage = styled.div`
 position:relative;
-display: flex;
-gap: 8rem;
 margin-top: 10vh;
 height:100vh;
   color: #fff;
@@ -28,7 +25,6 @@ height:100vh;
 const Contact = () => {
   return (
     <ContactPage id='contact'>
-      <ContactMap/>
       <ContactForm/>
     </ContactPage>
   )

@@ -70,7 +70,7 @@ window.addEventListener('scroll', startAnimationAbout);
         <AboutContent>
           <h1>ROOT'S DNA</h1>
           <p>
-            Root is a Turkey company founded in 2021 by the hands of a team of
+            Root is a Turkish company founded in 2021 by the hands of a team of
             experts in the field of information and communication technology.
             Our mission is to support our partners through the solutions and
             services we offer. Considering that your satisfaction is our

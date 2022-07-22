@@ -4,31 +4,32 @@ import { FaRegPaperPlane } from "react-icons/fa";
 
 const Form = styled.form`
   margin-top: 5rem;
-  width: 35vw;
-  height: 70vh;
+  margin-left: 20vw;
+  width: 55vw;
+  height: 80vh;
   border-radius: 1rem;
   background-color: hsla(0, 100%, 90%, 0.3);
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 2.5rem;
-  position:relative;
+  position:absolute;
   
 
   h1 {
-    margin-left: 12vw;
+    margin-left: 22vw;
     margin-top: 3rem;
   }
 
   h3 {
-    color: #ff4157;
-    margin-left: 2vw;
+    color: #fff;
+    margin-left: 4vw;
   }
 
   textarea,
   input,
   h5 {
-    margin-left: 2.5rem;
+    margin-left: 6.5rem;
   }
 
   input,
@@ -41,19 +42,20 @@ const Form = styled.form`
   }
 
   input {
-    width: 30vw;
+    width: 45vw;
     height: 2.5rem;
   }
 
   textarea {
-    width: 30vw;
-    height: 20vh;
+    width: 45vw;
+    height: 25vh;
   }
 
   button {
-    margin-left: 15vw;
+    margin-left: 25vw;
     font-weight: bold;
-    width: 5vw;
+    margin-top: 2rem;
+    width: 7vw;
     background-color: #ff6781;
     color: #fff;
     padding: 0.7rem;
@@ -65,21 +67,21 @@ const FormIcon = styled.div`
   width: 100%;
   height: 10vh;
   position: relative;
-
+  
   :before {
     content: "";
+    margin-left: 25vw;
     width: 5.5vw;
     height: 10vh;
     border-radius: 50%;
     background-color: hsla(0, 100%, 100%, 0.1);
     z-index: 12;
     position: absolute;
-    margin-left: 15vw;
     margin-top: 2.2rem;
   }
   svg {
     margin-top: 3rem;
-    margin-left: 15.9vw;
+    margin-left: 25.9vw;
     z-index: 13;
     position: absolute;
   }
