@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import earth from "../assests/earth.png";
 import sunrise from "../assests/sunrise.png";
 
 import {Link} from "react-scroll"
@@ -69,14 +68,13 @@ const MainDescription = styled.div`
   align-items: center;
   color: #fff;
   cursor:pointer;
-  z-index:11;
+  
   
   :hover {
     width: 15vw;
     color: #ff4157;
-    z-index:20;
   }
-     
+  
   
   &::before {
     width: 60px;
@@ -104,7 +102,7 @@ const MainDescription = styled.div`
 const MainAnimation = styled.div`
   margin: 16rem 20rem;
   z-index:10;
-  position:absolute;
+  position: absolute;
   animation-name: fadeInFromCenter;
   animation-duration: 0.9s;
   animation-fill-mode: both;

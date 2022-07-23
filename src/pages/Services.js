@@ -138,7 +138,7 @@ const Services = () => {
             software and digital media solutions .
           </p>
         </CompanyIntroduce>
-        <ServicesIntroduce activeClass="active" smooth={true} spy={true} to="about"><h4>Know about us!</h4></ServicesIntroduce>
+        <ServicesIntroduce activeClass="active" smooth={true} spy={true} offset={-190} to="about"><h4>Know about us!</h4></ServicesIntroduce>
       </div>
       <div>
         <ServicesContainer>
