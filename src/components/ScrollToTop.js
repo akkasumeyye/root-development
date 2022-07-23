@@ -33,6 +33,7 @@ const ScrollToTop = () => {
                     width: "50px",
                     fontSize: "50px",
                     borderRadius: "50px",
+                    zIndex: "25"
                 }}
                 onClick={scrollUp}
                 >^</button>
